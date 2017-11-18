@@ -1,0 +1,38 @@
+/* add your CSS here */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.rahmenbox {
+  border: thin solid grey;
+  width: 320px;
+  padding: 10px;
+}
+
+.textteil {
+  border: thin solid grey;
+  width: 300px;
+  padding: 10px;
+  text-align: justify;  
+}
+
+.italics {
+  font-style: italic;
+}
+
+.neueliste{
+  font-weight: bold;
+  list-style: none;
+}
+
+.fettertext {
+}
+  
+.tierbild {
+/*   border-radius: thin; */
+   border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 38px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 38px -10px rgba(0,0,0,0.75);
+  box-shadow: 15px 15px 38px -15px rgba(0,0,0,0.75);
+}
