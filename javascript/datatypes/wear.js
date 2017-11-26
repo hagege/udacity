@@ -3,11 +3,11 @@
  */
 
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
-var shirtWidth = 18;
-var shirtLength = 29;
-var shirtSleeve = 8.47;
+var shirtWidth = 23;
+var shirtLength = 30;
+var shirtSleeve = 8.71;
 
-if (shirtWidth <= 18 && shirtLength <= 28 && shirtSleeve <= 8.37) {
+if (shirtWidth <= 19 && shirtLength <= 28 && shirtSleeve <= 8.37) {
     console.log ("S");
     }
     else if ((shirtWidth >= 20 && shirtWidth <= 21) && shirtLength === 29 && (shirtSleeve >= 8.38 && shirtSleeve <= 8.62)) {
