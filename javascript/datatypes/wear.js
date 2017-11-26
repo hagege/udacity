@@ -7,7 +7,7 @@ var shirtWidth = 23;
 var shirtLength = 30;
 var shirtSleeve = 8.71;
 
-if (shirtWidth <= 19 && shirtLength <= 28 && shirtSleeve <= 8.37) {
+if ((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
     console.log ("S");
     }
     else if ((shirtWidth >= 20 && shirtWidth <= 21) && shirtLength === 29 && (shirtSleeve >= 8.38 && shirtSleeve <= 8.62)) {
