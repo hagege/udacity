@@ -15,20 +15,12 @@
  */
 
 // change the values of `flavor`, `vessel`, and `toppings` to test your code
-var flavor = "strawberry";
+var flavor = "vanilla";
 var vessel = "cone";
 var toppings = "cookies";
 
-if (flavor === "vanilla" || flavor === "chocolate") {
-    if (vessel === "cone" || vessel === "bowl") {
-        if (toppings === "sprinkles" || toppings === "peanuts"){
-            console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings);
-        } else {
-            console.log(toppings + " not possible!");
-        }
-    } else {
-        console.log(vessel + " not possible!");
-    }
+if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")) {
+    console.log("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings);
 } else {
-    console.log(flavor + " not possible!");
+    console.log("Not possible!");
 }
