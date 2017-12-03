@@ -12,13 +12,15 @@ function makeLine(length) {
 }
 
 function buildTriangle(zeilen) {
-    for (var j = 1; j <= zeilen; j++) {
-        makeLine(j);
-        return line + "\n";
+    var triangle = "";
+    for (var i = 1; i <= zeilen; i++) {
+        triangle += makeLine(i);
     }
+    return triangle;
 }
 
 
 
 // test your code by uncommenting the following line
 console.log(buildTriangle(10));
+// console.log(makeLine(10));
