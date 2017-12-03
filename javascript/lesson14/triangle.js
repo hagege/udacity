@@ -3,6 +3,8 @@
  */
 
 // creates a line of * for a given length
+
+// das komplette Muster wird auf einmal ausgegeben und nicht zeilenweise !!
 function makeLine(length) {
     var line = "";
     for (var j = 1; j <= length; j++) {
