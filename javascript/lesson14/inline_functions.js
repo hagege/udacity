@@ -15,5 +15,5 @@ var laugh = function(anzahl){
   return lachen + "!";
 };
 
-emotions("happy",  laugh); // don't use `()` not needed.
+emotions("happy", function(n) {return "ha".repeat(n) + "!";});
 
