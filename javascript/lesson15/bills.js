@@ -19,9 +19,8 @@ var bills = [50.23, 19.12, 34.01,
     10.00, 99.22, 102.20, 100.10, 6.77, 2.22
 ];
 
-var totals = bills.map(function(newbill) {
-  newbill += newbill*15/100;
-  newbill = newbill.toFixed(2);
-  return newbill;
+var totals = bills.map(function(newbills){
+    newbills = newbills * 1.15;
+    return Number(newbills.toFixed(2));
 });
 console.log(totals);
