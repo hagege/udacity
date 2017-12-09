@@ -3,21 +3,37 @@
  */
 
 var facebookProfile = {
-    name: "HG",
-    friends: 4,
-    messages: ["toll", "super", "weiter so", "na klar", "perfekt"],
-    postMessage: function addMessage(messages) {
-        messages.push("neue message");
+    name:"HG",
+    friends:4,
+    messages:["toll", "super", "weiter so", "na klar", "perfekt"],
+    
+    postMessage: function (message) {
+        this.messages.push(message);
+        return this.messages
     },
-    deleteMessage: function delMessage(index) {
-        messages.splice(index, 1);
+    
+    deleteMessage: function (index) {
+        this.messages.splice(index, 1);
+        return this.messages
     },
-    addFriend: function addF() {
-      messages.friends += 1;    
+    
+    addFriend: function () {
+      this.friends += 1;    
+      return this.friends;
     },
-    removeFriend: function remF() {
-      if (messages.friend > 1) {
-        messages.friends -= 1;    
+    
+    removeFriend: function () {
+      if (this.friends > 1) {
+          this.friends -= 1;    
+          return this.friends;
       }
     },
 };
+
+console.log(facebookProfile.friends);
+facebookProfile.addFriend();
+console.log(facebookProfile.friends);
+facebookProfile.postMessage("Wahnsinn");
+console.log(facebookProfile.messages);
+facebookProfile.deleteMessage(3);
+console.log(facebookProfile.messages);
