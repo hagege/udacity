@@ -5,6 +5,7 @@ You must use jQuery's remove() method.
 */
 
 // Start with this variable!
+// Lesson 19
 var articleItems, ul;
 
 articleItems = $(".article-item");
